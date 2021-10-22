@@ -3,12 +3,11 @@ import { IProduct } from '../store/modules/cart/types';
 import api from '../services/api';
 
 const Catalog: React.FC = () => {
-  const [catalog, setCatalog] = useState<IProduct[]>([])
+  const [catalog, setCatalog] = useState<IProduct[]>([]);
 
   useEffect(() => {
-    api.get('products').then(response => {
-      setCatalog(response.data);
-    })
+    api.get<IProduct[]>('products').then(
+      (response) => setCatalog(response.data));
   }, []);
 
   return (
