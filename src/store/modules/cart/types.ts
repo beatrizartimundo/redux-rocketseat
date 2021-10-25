@@ -1,7 +1,7 @@
 export enum ActionTypes {
-  // addProductToCartRequest = 'ADD_PRODUCT_TO_CART_REQUEST',
+  addProductToCartRequest = 'ADD_PRODUCT_TO_CART_REQUEST',
   addProductToCartSucess = 'ADD_PRODUCT_TO_CART_SUCESS',
-  // addProductToCartFailure = 'ADD_PRODUCT_TO_CART_FAILURE',
+  addProductToCartFailure = 'ADD_PRODUCT_TO_CART_FAILURE',
 }
 export interface IProduct {
   id: number;
